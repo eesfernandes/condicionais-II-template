@@ -85,8 +85,27 @@ if(num % 2 === 0){
 
 if(num % 2 === 0 && num % 3 === 0){
     console.log(`Número é divisivel por 2 e 3`)
-    num === 30 ?
-    console.log(`Ufa, acertei!`) : console.log(`Não foi dessa vez!`)
+    //num === 30 ? console.log(`Ufa, acertei!`) : console.log(`Não foi dessa vez!`)
+    switch (num) {
+        case 6:
+            console.log(`Dia do sol`)
+            break;
+        case 12:
+            console.log(`Dia da lua`)
+            break;
+        case 18:
+            console.log(`Dia de reis`)
+            break;
+        case 24:
+            console.log(`Dia de orion`)
+            break;
+        case 30:
+            console.log(`Dia de netuno`)
+            break;
+        default:
+            console.log(`Número é maior que 30 ou menor que 6`)
+            break;
+    }
 }else{
     console.log(`Número não é divisivel por 2 e 3`)
 }
